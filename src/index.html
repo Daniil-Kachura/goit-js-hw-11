@@ -4,26 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/go_top.js"></script>
     <title>Homework 11</title>
   </head>
-
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit">Search</button>
-    </form>
-    <div class="gallery">
-      <!-- Картки зображень -->
-    </div>
-    <div class="target"></div>
-    <script src="./js/index.js" type="module"></script>
+    <section class="headder">
+      <div class="container">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery"></div>
+        <div class="js-scroll-target"></div>
+        <button type="button" class="load-more is-hidden">Load more</button>
+      </div>
+    </section>
+
+    <!-- Кнопка  load-more  -->
+    <!-- <script src="index.js" type="module"></script> -->
+
+    <!-- Бескінечний скрол -->
+    <script src="index-scroll.js" type="module"></script>
   </body>
 </html>
